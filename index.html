@@ -287,8 +287,9 @@ change.disabled=false
 }
 
 if(secc===0 && !(inp.value===strings[ra].correct) ){
+	window.navigator.vibrate(200);
 alert(`${strings[ra].jumb.split('').join(' ')} = ${strings[ra].correct}`)
-window.navigator.vibrate(200);
+
 }
 pp.textContent=secc;
 
